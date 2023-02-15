@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet" />
     <title>Theatre</title>
-  
+    ,<script src="script.js" defer></script>
 
 </head>
 <body>
@@ -53,17 +53,32 @@
                     </div>
                     <div class="columns_slider">
                         <div class="slider_container">
-                            <img class='slider_img' src="img/first-screen_slider.jpg" alt="">
-                            <img class='slider_img-bg' src="img/first-scree_slider-bg.png" alt="">
+                            <div class="slider_item">
+                                <img class='slider_img' src="img/first-screen_slider.jpg" alt="">
+                                <img class='slider_img-bg' src="img/first-scree_slider-bg.png" alt="">
+                            </div>
+                            <div class="slider_item">
+                                <img class='slider_img' src="img/first-screen_slider.jpg" alt="">
+                                <img class='slider_img-bg' src="img/first-scree_slider-bg.png" alt="">
+                            </div>
+                            <div class="slider_item">
+                                <img class='slider_img' src="img/first-screen_slider.jpg" alt="">
+                                <img class='slider_img-bg' src="img/first-scree_slider-bg.png" alt="">
+                            </div>
                         </div>
                         <div class="slider_buttons">
-                            <div class="controls">
-                                <img class='arrow arrow-left' src="img/arrow-left.svg" alt="">
-                                <button class="buttons_previous arrow">ПРЕД</button>
+                            <div class="controls-prev">
+                                <button class="buttons_previous arrow"><svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928935C7.68054 0.538411 7.04738 0.538411 6.65685 0.928935L0.292892 7.2929ZM41 7L1 7L1 9L41 9L41 7Z" fill="#C4C4C4"/>
+                                    </svg>
+                                     ПРЕД</button>
                             </div>
-                            <div class="controls">
-                                <button class="buttons_next arrow">СЛЕД</button>
-                                <img class='arrow-right arrow' src="img/Arrow -right.svg" alt="">
+                            <div class="controls-next">
+                                <button class="buttons_next arrow">СЛЕД <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40.7071 8.70711C41.0976 8.31659 41.0976 7.68342 40.7071 7.2929L34.3431 0.928938C33.9526 0.538414 33.3195 0.538414 32.9289 0.928938C32.5384 1.31946 32.5384 1.95263 32.9289 2.34315L38.5858 8.00001L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM-1.74846e-07 9L40 9.00001L40 7.00001L1.74846e-07 7L-1.74846e-07 9Z" fill="white"/>
+                                    </svg>
+                                    </button>
+                                
                             </div>
 
                         </div>
@@ -104,23 +119,45 @@
         <section class="projects">
             <h2 class="projects_title title"><span class="accent">наши</span> постановки</h2>
             <div class="projects_slider">
-                <div class="slider_project1">
+                <div class="slider_project1 project">
                     <img src="img/slider_project1.jpg" alt="">
-                    <p class="project1_title">оскар 2020</p>
-                    <p class="project1_date">сентябрь 2020</p>
+                    <p class="project1_title project_title">оскар 2020</p>
+                    <p class="project1_date project_date">сентябрь 2020</p>
+                    <div class="projects_btn">
+                        <button class="search_btn"><img src="img/search_icon.svg" alt=""></button>
+                    </div>
                 </div>
-                <div class="slider_project2">
+                <div class="slider_project2 project">
                     <img src="img/slider_project2.jpg" alt="">
+                    <p class="project1_title project_title">оскар 2020</p>
+                    <p class="project1_date project_date">сентябрь 2020</p>
+                    <div class="projects_btn">
+                        <button class="search_btn"><img src="img/search_icon.svg" alt=""></button>
+                    </div>
                 </div>
-                <div class="slider_project3">
+                <div class="slider_project3 project">
                     <img src="img/slider_project3.jpg" alt="">
-                    <p class="project3_title">оскар 2020</p>
-                    <p class="project3_date">сентябрь 2020</p>
+                    <p class="project3_title project_title">оскар 2020</p>
+                    <p class="project3_date project_date">сентябрь 2020</p>
+                    <div class="projects_btn">
+                        <button class="search_btn"><img src="img/search_icon.svg" alt=""></button>
+                    </div>
                 </div>
-                <div class="slider_project4">
+                <div class="slider_project4 project">
                     <img src="img/slider_project4.jpg" alt="">
-                    <p class="project4_title">оскар 2020</p>
-                    <p class="project4_date">сентябрь 2020</p>
+                    <p class="project4_title project_title">оскар 2020</p>
+                    <p class="project4_date project_date">сентябрь 2020</p>
+                    <div class="projects_btn">
+                        <button class="search_btn"><img src="img/search_icon.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="slider_project2 project">
+                    <img src="img/slider_project2.jpg" alt="">
+                    <p class="project1_title project_title">оскар 2020</p>
+                    <p class="project1_date project_date">сентябрь 2020</p>
+                    <div class="projects_btn">
+                        <button class="search_btn"><img src="img/search_icon.svg" alt=""></button>
+                    </div>
                 </div>
             </div>
         </section>
