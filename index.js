@@ -11,23 +11,18 @@ $(function () {
 		prevArrow: ".controls-prev",
 	});
 
-  // VALIDATION
+  // OPEN BURGER
 
-  const form = $('#contact-form');
-
-  form.validate({
-    rules: {
-     
-    }
+  $('.burger__btn').on('click', function() {
+    $('.burger__menu').addClass('active')
   })
 
- 
+  $('.burger__close').on('click', function() {
+    $('.burger__menu').removeClass('active');
+  })
 
-  $('#submit__btn').on('click', function(e) {
-    e.preventDefault()
-    $('input:blank').css('border', '1px solid red')
-    $('textarea:blank').css('border', '1px solid red')
-    console.log(form.valid())
+  $('.burger__item').on('click', function() {
+    $('.burger__menu').removeClass('active')
   })
 
 });
