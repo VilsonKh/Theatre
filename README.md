@@ -1,7 +1,7 @@
 # 🎭 Theater
 The Theater is an immersive online platform dedicated to showcasing the captivating world of theater and promoting the rich repertoire of a renowned theatrical institution.
 
-The **Theater Website** can be accessed via [this link]().
+The **Theater Website** can be accessed via [this link](https://vilsonkh.github.io/theatre/).
 
 ## Project Functionality
 The website offers visitors an opportunity to explore the theater's diverse productions.
