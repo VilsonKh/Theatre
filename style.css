@@ -2,6 +2,7 @@
 
 :root {
 	--main-color-gold: #d1a954;
+	--color-dark-gold: #b88f39;
 	--main-color-black: #333333;
 }
 
@@ -9,8 +10,8 @@ body {
 	font-family: "Open Sans", sans-serif;
 	color: white;
 	line-height: 1;
-	font-size: 16px;
-	background-color: #333333;
+	font-size: 14px;
+	background-color: var(--main-color-black);
 	min-width: 576px;
 	max-width: 1920px;
 	margin: 0 auto;
@@ -65,23 +66,16 @@ body {
 	height: 26px;
 }
 
-path {
+svg path {
 	transition: all 0.2s linear;
 }
 
 .social__link:hover path {
-	fill: #b88f39;
+	fill: var(--color-dark-gold);
 }
 
 .social__link:not(:last-child) {
 	margin-bottom: 30px;
-}
-
-.social__logo {
-	width: 26px;
-	height: 26px;
-	object-fit: contain;
-	object-position: center;
 }
 
 /* HEADER */
@@ -259,7 +253,6 @@ path {
 .text__paragraph {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
-	font-size: 14px;
 	line-height: 150%;
 	color: #ffffff;
 	margin-bottom: 50px;
@@ -311,13 +304,13 @@ path {
 
 .columns__slider {
 	width: 370px;
-	/* height: 570px; */
 	overflow: hidden;
 }
 
-.slider__buttons {
-	display: none;
+.slider {
+height: 550px;
 }
+
 
 .slider__item-container {
 	width: 370px;
@@ -411,28 +404,13 @@ path {
 	margin-bottom: 40px;
 }
 
-.numbers__seats {
-	margin-bottom: 20px;
-}
-
-.seats__img {
-	margin-bottom: 20px;
-}
-
-.history__img {
+.numbers__seats, .seats__img, .history__img {
 	margin-bottom: 20px;
 }
 
 .about__img {
 	width: 350px;
 	height: 292px;
-}
-
-.theatre__img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center;
 }
 
 /* PROJECTS */
@@ -443,7 +421,7 @@ path {
 }
 
 .slider {
-	height: 480px;
+	/* height: 480px; */
 	overflow: hidden;
 }
 
@@ -467,16 +445,6 @@ path {
 .projects__slider {
 	max-width: 1920px;
 	margin: 0 auto;
-}
-
-.projects__slider-line {
-	display: flex;
-	margin: 0 auto;
-	width: 100%;
-	/* overflow: hidden; */
-	position: relative;
-	overflow: scroll;
-	scroll-snap-type: x mandatory;
 }
 
 .slider__project {
@@ -530,15 +498,7 @@ path {
 	opacity: 1;
 }
 
-.slider__project:hover .project__title {
-	opacity: 0;
-}
-
-.slider__project:hover .project__date {
-	opacity: 0;
-}
-
-.slider__project:hover::before {
+.slider__project:hover .project__title, .slider__project:hover .project__date, .slider__project:hover::before {
 	opacity: 0;
 }
 
@@ -636,7 +596,7 @@ path {
 }
 
 .contacts__info {
-	flex: 0 0 250px;
+	max-width: 250px;
 	font-family: "Open Sans Condensed", sans-serif;
 	font-weight: 700;
 	font-size: 16px;
@@ -676,6 +636,10 @@ path {
 .form__textarea {
 	width: 270px;
 	height: 100px;
+}
+
+.form__textarea:focus {
+	outline: none;
 }
 
 .form__correspondence {
@@ -724,7 +688,7 @@ path {
 	.header__container {
 		flex-direction: column;
 		gap: 30px;
-		max-width: 690px;
+		/* max-width: 690px; */
 	}
 
 	.about__wrapper {
@@ -751,10 +715,6 @@ path {
 	.header {
 		max-height: 800px;
 		margin-bottom: 80px;
-	}
-
-	.header__container {
-		max-width: 696px;
 	}
 
 	.burger__btn {
@@ -807,6 +767,10 @@ path {
 		flex-direction: column;
 	}
 
+	.contacts__info {
+		max-width: unset;
+	}
+
 	.contacts__phone-email {
 		width: 100%;
 		order: 1;
@@ -822,9 +786,6 @@ path {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-	}
-
-	.form__content {
 	}
 
 	.footer__inner {
@@ -885,7 +846,6 @@ path {
 	}
 
 	.header__container {
-		flex-direction: row;
 		max-width: 510px;
 	}
 
