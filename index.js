@@ -15,14 +15,17 @@ $(function () {
 
 	$(".burger__btn").on("click", function () {
 		$(".burger__menu").addClass("active");
+		$(".burger__menu").css("box-shadow", "0px 0px 90px 26px rgba(0,0,0,0.75)");
 	});
 
 	$(".burger__close").on("click", function () {
 		$(".burger__menu").removeClass("active");
+		$(".burger__menu").css("box-shadow", "none");
 	});
 
 	$(".burger__item").on("click", function () {
 		$(".burger__menu").removeClass("active");
+		$(".burger__menu").css("box-shadow", "none");
 	});
 
 	// aside positioning
