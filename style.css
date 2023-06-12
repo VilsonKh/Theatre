@@ -268,6 +268,9 @@ svg path {
 .arrow {
   transition: all .3s linear;
 	width: 108px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .arrow:hover path {

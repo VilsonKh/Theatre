@@ -36,6 +36,14 @@ $(function () {
 		if ($(window).width() > "1920") {
 			let offset = ($(window).width() - 1920) / 2;
 			$(".aside").css("left", `${offset}px`);
+		} else {
+			$(".aside").css("left", "0");
 		}
 	}
+
+	//DISABLE DEFAULT FORM ACTION
+
+	$("#contact-form").on("submit", (e) => {
+		e.preventDefault();
+	});
 });
