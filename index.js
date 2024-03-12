@@ -3,6 +3,8 @@ $(function () {
 	$(".slider").slick({
 		slidesToShow: 4,
 		arrows: false,
+		variableWidth: true,
+		
 	});
 
 	$(".columns__slider").slick({
